@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--    <meta name="viewport"content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+
+    <title>缴费易app</title>
+    <link rel="stylesheet" type="text/css" href="./wzfxstyle.css"/>
+    <link rel="stylesheet" type="text/css" href="./aui.css"/>
+    <script src="./jQuery-v3.1.1.js"></script>
+    <script src="./echarts.min.js"></script>
+    <style type="text/css">
+        .zhezhao{width: 100%;height: 100%;background:#425CF7;position: fixed;top:0; left:0px;z-index: 1000;display:block;}
+        .payment{margin-top: 142px;}
+        .payment .tishizi{font-size:13px;font-weight: normal;color: #f2f2f2;}
+        .text-center {text-align: center;}
+    </style>
+</head>
+<body class="weizhangfenxi" style="overflow-y: scroll;">
+<!--加载开始-->
+<!--<div class="zhezhao" id="zhezhao">-->
+<!--    <div class="payment">-->
+<!--        <div class="text-center"><img src="./zhuanquanquna.gif" height="180" width="180"/></div>-->
+<!--        <div class="text-center tishizi">您的报告正在生成中...</div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--加载结束-->
+
+<!--导航栏开始-->
+<!--<div class="top-bar text-center"><a href="#"><i class="iconfont icon-xiangzuo">违章分析</i></a>-->
+<!--</div>-->
+<!--导航栏结束-->
+<div class="indexbanner">
+    <img src="./linghongbaobanner.png" class="center-block"/>
+</div>
+<!--内容部分开始-->
+<div class="weizhangneirongbufen">
+    <section class="aui-grid">
+        <div class="aui-row wzfx-sdf">
+            <div class="aui-col-xs-4 aui-line-bottom" >
+                <div class="wzfx-biaoti">违章次数</div>
+                <div class="wzfx-number">4</div>
+            </div>
+            <div class="aui-col-xs-4 aui-line-bottom">
+                <div class="wzfx-biaoti">罚款金额</div>
+                <div class="wzfx-number">500</div>
+            </div>
+            <div class="aui-col-xs-4 aui-line-bottom">
+                <div class="wzfx-biaoti">扣除分数</div>
+                <div class="wzfx-number">6</div>
+            </div>
+        </div>
+    </section>
+    <!--<div class="weizhangtishi-timepic"><img class="center-block" src="./wzti-lpic.png"/></div>-->
+    <div class="wzfx-time" style="z-index:0;">
+        2018年1月1日-2018年1月30日
+    </div>
+
+    <!------------------------------------------------------------------违章趋势开始-->
+    <div class="neirongquyu1">
+        <div class="weizhangtishi-timepic2"><img src="./wzxwfx-lz.png"/></div>
+        <div class="weizhangtishi-timepic3"><img src="./wzxwfx-lz.png"/></div>
+        <div class="weizhangtishi-timepic4"><img src="./wzxwfx-sid.png"/></div>
+        <div class="weizhangtishi-timepic5"><img src="./wzxwfx-sid2.png"/></div>
+        <div class="weizhangtishineirongbiaoti">违章趋势</div>
+        <div>
+            <div id="main3" style="width:100%;height:300px;"></div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------违章趋势结束-->
+
+
+    <!------------------------------------------------------------------违章分析开始-->
+    <div class="neirongquyu">
+        <div class="weizhangtishi-timepic2"><img src="./wzxwfx-lz.png"/></div>
+        <div class="weizhangtishi-timepic3"><img src="./wzxwfx-lz.png"/></div>
+        <div class="weizhangtishi-timepic4"><img src="./wzxwfx-sid.png"/></div>
+        <div class="weizhangtishi-timepic5"><img src="./wzxwfx-sid2.png"/></div>
+        <div class="weizhangtishineirongbiaoti">罚款分析</div>
+        <div>
+            <div id="main2" style="width:100%;height:300px;"></div>
+            <div class="fakuanzongjiner"style="">总罚金:<span class="jinershuzi">1050</span></div>
+
+        </div>
+    </div>
+    <!------------------------------------------------------------------违章分析结束-->
+
+
+    <!------------------------------------------------------------------罚款分析开始-->
+    <div class="neirongquyu2">
+        <div class="weizhangtishi-timepic2"><img src="./wzxwfx-lz.png"/></div>
+        <div class="weizhangtishi-timepic3"><img src="./wzxwfx-lz.png"/></div>
+        <div class="weizhangtishi-timepic4"><img src="./wzxwfx-sid.png"/></div>
+        <div class="weizhangtishi-timepic5"><img src="./wzxwfx-sid2.png"/></div>
+        <div class="weizhangtishineirongbiaoti">违章分析</div>
+        <div>
+            <div id="main" style="width:100%;height:300px;padding-right: 2%;"></div>
+
+        </div>
+
+    </div>
+    <!------------------------------------------------------------------罚款分析结束-->
+
+
+    <!------------------------------------------------------------------重点提醒开始-->
+    <div class="neirongquyu">
+        <div class="weizhangtishi-timepic2"><img src="./wzxwfx-lz.png"/></div>
+        <div class="weizhangtishi-timepic3"><img src="./wzxwfx-lz.png"/></div>
+        <div class="weizhangtishi-timepic4"><img src="./wzxwfx-sid.png"/></div>
+        <div class="weizhangtishi-timepic5"><img src="./wzxwfx-sid2.png"/></div>
+        <div class="weizhangtishineirongbiaoti">重点提醒</div>
+        <div class="zhongdiantixing-con">
+            <div class="gaopinweizhang">
+                <div class="aui-list-item-media dizhi-pic" style="width:100%;"> <img src="./weizhangdidian.png"> </div>
+                <div class="tishiquyu">
+                    <div class="weizhangdizhi">
+                        <div class="weizhangdizhi2">新洛大街颖秀路与开拓路交叉口。</div>
+                        <div class="weizhangdizhi3">违章行为:超速行驶。</div>
+                    </div>
+                    <div class="aui-row">
+                        <div class="aui-col-xs-4 aui-line-bottom" >
+
+                            <div class="wzdz-biaoti">违章次数</div>
+                            <div class="wzdz-number">4</div>
+
+                        </div>
+                        <div class="aui-col-xs-4 aui-line-bottom">
+                            <div class="wzdz-biaoti">罚款金额</div>
+                            <div class="wzdz-number">500</div>
+                        </div>
+                        <div class="aui-col-xs-4 aui-line-bottom">
+                            <div class="wzdz-biaoti">扣除分数</div>
+                            <div class="wzdz-number">6</div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="weizhangdizhi4"> 友情提示:请重点关注该地点。 </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------重点提醒结束-->
+
+
+    <!------------------------------------------------------------------综合评价开始-->
+    <div class="neirongquyu">
+        <div class="weizhangtishi-timepic2"><img src="./wzxwfx-lz.png"/></div>
+        <div class="weizhangtishi-timepic3"><img src="./wzxwfx-lz.png"/></div>
+        <div class="weizhangtishi-timepic4"><img src="./wzxwfx-sid.png"/></div>
+        <div class="weizhangtishi-timepic5"><img src="./wzxwfx-sid2.png"/></div>
+        <div class="weizhangtishineirongbiaoti">综合评价</div>
+        <div class="zonghefenxi-con">
+            <div class="zonghetishi">您本月累计超速达到<span style="color: #FF3F4A">13</span>次。</div>
+            <div class="aui-list-item-media " style="width:100%;padding:40px 50px 40px 50px;"> <img src="./wzxwfx-jieguo.png"> </div>
+            <a class="fenxianghaoyou">
+                分享给好友
+            </a>
+        </div>
+    </div>
+    <!------------------------------------------------------------------综合评价结束-->
+</div>
+<!--内容部分结束-->
+    <script type="text/javascript">
+        function setInnerHTML(){
+        }
+        //setInterval("refer()",5000);
+        //function refer(){
+         //   $(".zhezhao").fadeOut();
+        //}
+    // -----------------------------------------------------------------违章分析柱状图开始
+    var myChart = echarts.init(document.getElementById('main'));
+    var option = {
+        title: {
+            subtext: '违章次数统计',
+        },
+       tooltip: {
+           trigger: 'axis',
+           axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+               type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+           }
+       },
+        grid: {
+            left: '4%',
+            // width:'auto',
+            right: '0%',
+            bottom: '0%',
+            containLabel: true
+        },
+        xAxis : [
+            {
+                axisLabel:{ textStyle:{ fontSize:10}},//X坐标轴刻度文字的大小。
+                type : 'category',
+                data : ['违反信号灯', '超速行驶', '不按规定停车', '违反禁令标示', '其他行为'],
+                axisTick: {
+                    alignWithLabel: true
+                },
+                axisLine: {
+
+                    lineStyle:{
+                        color: 'rgba(0, 0, 0, 0.3)',   //坐标轴颜色设置。
+
+                    }
+                },
+
+                splitLine: {
+                    show : false     //X轴方向不显示分行
+                },
+
+                axisLabel: {
+//                    fontSize : 10,
+                    color: "#666", //文字颜色
+                    fontFamily : "#Arial"
+                },
+
+            }
+        ],
+
+        yAxis : [
+
+            {
+                type : 'value',
+                axisLine: {
+
+                    lineStyle:{
+                        color: 'rgba(0, 0, 0, 0.2)',   //坐标轴颜色设置。
+
+                    }
+                },
+                splitLine: {
+                    show: true,      //Y轴方向显示分行
+                    lineStyle: {
+                        color: "#f1f1f1"  //分行的线颜色
+                    }
+                },
+                axisLabel: {
+                    fontSize : 12,
+                    color: "#666", //Y轴文字颜色
+                    fontFamily : "#Arial"
+                },
+                min: 0,
+                max: 10,          //Y轴最大值为某项违章中最大值。
+                interval: 2,
+            }
+        ],
+        labelLine: {
+            normal: {
+                lineStyle: {
+                    color: 'rgba(0, 0, 255, 0.2)'
+                }
+            }
+        },
+        series : [
+            {
+                name:'次数',
+                type:'bar',
+                barWidth: '30%',                                   // 柱子的宽度设置。
+                data:[1, 3, 2, 6, 8, 9, 2],
+                color: new echarts.graphic.LinearGradient(
+                    0, 0, 0, 1, // 相当于2点的位置 A(0, 0)  B(0, 1)
+                    [
+                        { offset: 0, color: '#3759FF' }, // A点的颜色渐变的设置。
+                        { offset: 1, color: '#489AFF' } // B点的颜色渐变的设置
+                    ]
+                ),
+
+            }
+        ],
+
+    };
+    myChart.setOption(option);    // 使用刚指定的配置项和数据显示图表。
+    // -----------------------------------------------------------------违章分析柱状图结束
+
+
+    // -----------------------------------------------------------------罚款分析饼图开始
+    var myChart = echarts.init(document.getElementById('main2'));
+    var option = {
+        series : [
+            {
+                name: '访问来源',
+                type: 'pie',
+                radius: '45%',
+                textAlign: 'center',
+                data:[
+                    {value:235, name:'违反交通信号灯 \n877'},
+                    {value:274, name:'超速行驶'},
+                    {value:310, name:'违反禁令标示'},
+                    {value:335, name:'不按规定停车'},
+                    {value:400, name:'其他行为'}
+                ]
+            }
+        ]
+    };
+    myChart.setOption(option);
+    // -----------------------------------------------------------------罚款分析饼图结束
+
+
+    // -----------------------------------------------------------------违章趋势折线图开始
+    var myChart = echarts.init(document.getElementById('main3'));
+    var option = {
+
+        title: {
+           //  text: '特性示例：渐变色 阴影 点击缩放',
+            subtext: '违章次数统计',
+
+        },
+        tooltip: {
+            trigger: "axis",
+            axisPointer : {
+                lineStyle : {
+                    color: "#3699CA"
+                }
+            },
+            formatter: '{b}：{c}' //提示内容。
+        },
+        grid: {
+            left:'2%',
+            right:'7%',
+            top: "20%",
+            bottom: "6%",
+            containLabel: true
+        },
+        xAxis: {
+            type: "category",
+            axisPointer : {
+                lineStyle : {
+                    color: "#fefefe"
+                }
+            },
+            axisLine: {
+                lineStyle: {
+                    color: "#aaa"//X轴坐标线的颜色。
+                }
+            },
+            axisTick: {
+                show: true,
+                interval : 0,
+                length:3,
+                lineStyle: {
+                    color: "#888"//X轴坐标点的颜色
+                }
+            },
+            axisLabel: {
+                fontSize : 12,
+                color: "#666", //X轴文字颜色
+                fontFamily : "#Arial"
+            },
+            boundaryGap: false,
+            data : ['1月1日', '1月7日', '1月15日', '1月20日', '1月25日', '1月28日', '1月30日'],
+        },
+        yAxis: [{
+//            name : "违章次数",
+            min: 0,
+            max: 10,          //Y轴最大值为某项违章中最大值。
+            interval: 2,
+            nameTextStyle : {
+                color: "#657c97",
+                padding : [5, 0, 0, 20],
+                fontFamily : "#Arial",
+                fontSize : 18,
+            },
+            axisLine: {
+                show : false
+            },
+            splitLine: {
+                show: true,
+                lineStyle: {
+                    color: "#f1f1f1"  //分行的线颜色
+                }
+            },
+            axisTick : {
+                show : false
+            },
+            axisLabel: {
+                fontSize : 12,
+                color: "#666",
+                fontFamily : "#Arial"
+
+            },
+            type: "value"
+        },
+            {
+//            name : "84%",
+            nameTextStyle : {
+                color : "#19a1f7",
+                align: "left",
+                fontSize : 18,
+            },
+            axisLine: {
+                show : false
+            },
+            splitLine: {
+                show : false
+            },
+            axisTick : {
+                show : false
+            },
+            axisLabel: {
+                show : false
+            },
+            type: "value"
+        }],
+        lineStyle : {
+            normal : {
+                color : "#666"
+            }
+        },
+        series: [{
+//            name: "违章次数",
+            yAxisIndex : 0,
+            areaStyle : {
+                normal: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: "rgba(133, 189, 255, 1)"
+                    }, {
+                        offset: 1,
+                        color: ' rgba(213, 250, 255, 0.5)'
+                    }])
+                }
+            },
+            smooth: true,
+            type: "line",
+            symbolSize : 0,
+            data: [1, 2, 1, 3, 7, 2, 1]
+        }]
+    };
+    myChart.setOption(option);
+    // -----------------------------------------------------------------违章趋势折线图结束
+</script>
+</body>
+</html>

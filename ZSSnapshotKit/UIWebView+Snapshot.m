@@ -1,38 +1,27 @@
 //
-//  WKWebView+Snapshot.m
+//  UIWebView+Snapshot.m
 //  ZSSnapshotKit_master
 //
-//  Created by safiri on 2019/5/21.
+//  Created by safiri on 2019/5/22.
 //  Copyright © 2019 safiri. All rights reserved.
 //
 
-#import "WKWebView+Snapshot.h"
+#import "UIWebView+Snapshot.h"
+#import "UIScrollView+Snapshot.h"
 #import "WebViewPrintPageRenderer.h"
 
-@implementation WKWebView (Snapshot)
+@implementation UIWebView (Snapshot)
 
 - (UIImage *)takeSnapshotOfVisibleContent {
-    
-    UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0);
-    
-    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:YES];
-    
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    
-    UIGraphicsEndImageContext();
-    
-    return image;
+    return [self.scrollView takeSnapshotOfVisibleContent];
 }
 
 - (UIImage *)takeSnapshotOfFullContent {
-    WebViewPrintPageRenderer *render = [[WebViewPrintPageRenderer alloc] initFormatter:self.viewPrintFormatter contentSize:self.scrollView.contentSize];
-    UIImage *image = [render printContentToImage];
-    return image;
+    return [self.scrollView takeSnapshotOfFullContent];
 }
 
 - (void)asyncTakeSnapshotOfFullContent:(void (^)(UIImage * _Nullable))completion {
-    //在截图之前先将用户看到的当前页面截取下来，作为一张图片挡住接下来所执行的截取操作，
-    //并且在执行完截图操作后，将截取的遮盖图片销毁。
+    
     UIImageView *coverImageView = [[UIImageView alloc] initWithFrame:self.bounds];
     coverImageView.image = [self takeSnapshotOfVisibleContent];
     [self addSubview:coverImageView];
@@ -43,11 +32,11 @@
     // 当contentSize.height<bounds.height时，保证至少有1页的内容绘制
     NSInteger pageNum = 1;
     if (self.scrollView.contentSize.height > self.scrollView.bounds.size.height) {
-        pageNum = (NSInteger)floorf(self.scrollView.contentSize.height/self.scrollView.bounds.size.height);
+        pageNum = (NSInteger)floorf(self.scrollView.contentSize.height / self.scrollView.bounds.size.height);
     }
     
     [self loadPageContentIndex:0 maxIndex:pageNum completion:^{
-        [self.scrollView setContentOffset:CGPointZero];
+        self.scrollView.contentOffset = CGPointZero;
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             WebViewPrintPageRenderer *render = [[WebViewPrintPageRenderer alloc] initFormatter:self.viewPrintFormatter contentSize:self.scrollView.contentSize];
             UIImage *image = [render printContentToImage];
@@ -67,6 +56,8 @@
         }else {
             if (completion) completion();
         }
+        
     });
 }
+
 @end

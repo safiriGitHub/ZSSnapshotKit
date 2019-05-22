@@ -9,6 +9,7 @@
 #import "WKWebViewTesterViewController.h"
 #import <WebKit/WebKit.h>
 #import "WKWebView+Snapshot.h"
+#import "UIScrollView+Snapshot.h"
 #import "SVProgressHUD.h"
 
 @interface WKWebViewTesterViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -41,7 +42,12 @@
     self.webView.frame = CGRectMake(0, webView_Y, self.view.frame.size.width, self.view.frame.size.height - webView_Y);
     [self.view addSubview:self.webView];
     
-    NSURL *url = [NSURL URLWithString:@"https://www.jianshu.com/u/2809c84474f6"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"weizhangfenxi" ofType:@"html"];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    
+//    NSURL *url = [NSURL URLWithString:@"https://www.jianshu.com/u/2809c84474f6"];
+//    NSURL *url = [NSURL URLWithString:@"http://pay.egintra.com:8080/wzfx/wzfx/html/weizhangfenxi.html"];
+    
     [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
 }
 
@@ -69,7 +75,12 @@
     UIImageWriteToSavedPhotosAlbum(image, self, @selector(completedWithImage:error:context:), NULL);
 }
 - (void)async_takeSnapshotOfFullContent_bySpliter {
-    [SVProgressHUD showInfoWithStatus:@"TODO:暂未实现截图拼接功能"];
+    [SVProgressHUD show];
+    [self.webView.scrollView asyncTakeSnapshotOfFullContent:^(UIImage * _Nullable image) {
+        [SVProgressHUD dismiss];
+        //保存截图到照片
+        UIImageWriteToSavedPhotosAlbum(image, self, @selector(completedWithImage:error:context:), NULL);
+    }];
 }
 - (void)async_takeSnapshotOfFullContent_byPrinter {
     [SVProgressHUD show];

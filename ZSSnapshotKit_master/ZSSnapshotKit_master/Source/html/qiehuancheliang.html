@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>缴费易app</title>
+    <link rel="stylesheet" type="text/css" href="../css/wzfxstyle.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/aui.css"/>
+    <script src="../js/jQuery-v3.1.1.js"></script>
+</head>
+<body class="weizhangfenxi">
+<!--导航栏开始-->
+<!--<div class="top-bar text-center"><a href="#"><i class="iconfont icon-xiangzuo">违章分析</i></a>-->
+<!--</div>-->
+<!--导航栏结束-->
+<div class="indexbanner"><img src="../img/wzxwfx-banner.png" class="center-block"/></div>
+<!--内容部分开始-->
+<div class="qehuancheliangbufen">
+    <!------------------------------------------------------------------切换车辆开始-->
+    <div class="qiehuancheliang-con">
+            <div class="wodecheliang-tit"><h4>--我的车辆--</h4></div>
+            <div class="cheliangtupian" style="width:100%;padding:0px 60px 0px 60px;">
+                <img src="../img/wzxwfx-che.png">
+            </div>
+            <div>
+                <div class="xuanzechenglian-k">
+                <div class="status_circle_online"></div><span>鲁A234432</span></span>
+                <div class="qiehuanright-icon"><img src="../img/qiehuan-icon.png"/></div>
+                </div>
+                  <div>
+                <ul class="selectBoxs">
+                    <li><div class="status_circle_online"></div>鲁A234432</li>
+                    <li><div class="status_circle_hide"></div>鲁B678432</li>
+                    <li><div class="status_circle_hide"></div>鲁C678432</li>
+                </ul>
+                      </div>
+            </div>
+            <div>
+                <a class="shengchengbaogao" href="weizhangfenxi.html">
+                生成报告
+            </a>
+            </div>
+    </div>
+    <div class="dibuquyu">
+        <img src="../img/dibupic.png"/>
+    </div>
+    <!------------------------------------------------------------------切换车辆结束-->
+</div>
+<!--内容部分结束-->
+<script type="text/javascript">
+        var selectBox = $('.selectBoxs');       //下拉框
+        var selectlist = $('.selectBoxs li');
+        var stuate = $('.xuanzechenglian-k');  //点击状态
+        stuate.click(function () {
+            selectBox.slideDown("slow");
+        })
+        selectlist.click(function () {
+            $('.selectBoxs li').css("background-color","#ffffff");
+            selectBox.slideUp("slow");
+            $(this).parent().prev().find("span").html($(this).html());
+            $(this).css("background-color","#DCEAFF");
+
+        })
+
+
+    </script>
+</body>
+</html>

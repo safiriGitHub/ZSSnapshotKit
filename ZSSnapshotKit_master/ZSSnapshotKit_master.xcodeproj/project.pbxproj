@@ -23,6 +23,37 @@
 		036148842293E81D0093D9F1 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0361487C2293E81D0093D9F1 /* SVIndefiniteAnimatedView.m */; };
 		036148852293E81D0093D9F1 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0361487D2293E81D0093D9F1 /* SVProgressHUD.bundle */; };
 		036148862293E81D0093D9F1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0361487F2293E81D0093D9F1 /* README.md */; };
+		03E280502294D7B80037E2BA /* wzxwfx-luan.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E280332294D7B80037E2BA /* wzxwfx-luan.png */; };
+		03E280512294D7B80037E2BA /* wzxwfx-mi.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E280342294D7B80037E2BA /* wzxwfx-mi.png */; };
+		03E280522294D7B80037E2BA /* wzxwfx-lz.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E280352294D7B80037E2BA /* wzxwfx-lz.png */; };
+		03E280532294D7B80037E2BA /* wzxwfx-banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E280362294D7B80037E2BA /* wzxwfx-banner.png */; };
+		03E280542294D7B80037E2BA /* weizhangdidian.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E280372294D7B80037E2BA /* weizhangdidian.png */; };
+		03E280552294D7B80037E2BA /* qiehuan-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E280382294D7B80037E2BA /* qiehuan-icon.png */; };
+		03E280562294D7B80037E2BA /* zhuanquanquna.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03E280392294D7B80037E2BA /* zhuanquanquna.gif */; };
+		03E280572294D7B80037E2BA /* wzxwfx-sid.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E2803A2294D7B80037E2BA /* wzxwfx-sid.png */; };
+		03E280582294D7B80037E2BA /* wzxwfx-jieguo.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E2803B2294D7B80037E2BA /* wzxwfx-jieguo.png */; };
+		03E280592294D7B80037E2BA /* wzxwfx-wen.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E2803C2294D7B80037E2BA /* wzxwfx-wen.png */; };
+		03E2805A2294D7B80037E2BA /* dibupic.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E2803D2294D7B80037E2BA /* dibupic.png */; };
+		03E2805B2294D7B80037E2BA /* linghongbaobanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E2803E2294D7B80037E2BA /* linghongbaobanner.png */; };
+		03E2805C2294D7B80037E2BA /* wzxwfx-can.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E2803F2294D7B80037E2BA /* wzxwfx-can.png */; };
+		03E2805D2294D7B80037E2BA /* wzxwfx-shuai.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E280402294D7B80037E2BA /* wzxwfx-shuai.png */; };
+		03E2805E2294D7B80037E2BA /* wzxwfx-sid2.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E280412294D7B80037E2BA /* wzxwfx-sid2.png */; };
+		03E2805F2294D7B80037E2BA /* wzxwfx-che.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E280422294D7B80037E2BA /* wzxwfx-che.png */; };
+		03E280602294D7B80037E2BA /* wzxwfx-lu.png in Resources */ = {isa = PBXBuildFile; fileRef = 03E280432294D7B80037E2BA /* wzxwfx-lu.png */; };
+		03E280612294D7B80037E2BA /* aui.css in Resources */ = {isa = PBXBuildFile; fileRef = 03E280452294D7B80037E2BA /* aui.css */; };
+		03E280622294D7B80037E2BA /* wzfxstyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 03E280462294D7B80037E2BA /* wzfxstyle.css */; };
+		03E280632294D7B80037E2BA /* mobiscroll.custom-2.17.0.min-zh.js in Resources */ = {isa = PBXBuildFile; fileRef = 03E280482294D7B80037E2BA /* mobiscroll.custom-2.17.0.min-zh.js */; };
+		03E280642294D7B80037E2BA /* jquery.circliful.js in Resources */ = {isa = PBXBuildFile; fileRef = 03E280492294D7B80037E2BA /* jquery.circliful.js */; };
+		03E280652294D7B80037E2BA /* jQuery-v3.1.1.js in Resources */ = {isa = PBXBuildFile; fileRef = 03E2804A2294D7B80037E2BA /* jQuery-v3.1.1.js */; };
+		03E280662294D7B80037E2BA /* echarts.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 03E2804B2294D7B80037E2BA /* echarts.min.js */; };
+		03E280672294D7B80037E2BA /* jaizaizhong.html in Resources */ = {isa = PBXBuildFile; fileRef = 03E2804D2294D7B80037E2BA /* jaizaizhong.html */; };
+		03E280682294D7B80037E2BA /* weizhangfenxi.html in Resources */ = {isa = PBXBuildFile; fileRef = 03E2804E2294D7B80037E2BA /* weizhangfenxi.html */; };
+		03E280692294D7B80037E2BA /* qiehuancheliang.html in Resources */ = {isa = PBXBuildFile; fileRef = 03E2804F2294D7B80037E2BA /* qiehuancheliang.html */; };
+		03E280A12294F9A40037E2BA /* UIScrollView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E280A02294F9A40037E2BA /* UIScrollView+Snapshot.m */; };
+		03E280A42294FCFB0037E2BA /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E280A32294FCFB0037E2BA /* UIView+Snapshot.m */; };
+		03E280A722951DCD0037E2BA /* UIWindow+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E280A622951DCD0037E2BA /* UIWindow+Snapshot.m */; };
+		03E280AA229522830037E2BA /* UIWebView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E280A9229522830037E2BA /* UIWebView+Snapshot.m */; };
+		03E280AD22952D8C0037E2BA /* UITableView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E280AC22952D8C0037E2BA /* UITableView+Snapshot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +85,42 @@
 		0361487D2293E81D0093D9F1 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		0361487E2293E81D0093D9F1 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
 		0361487F2293E81D0093D9F1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		03E280332294D7B80037E2BA /* wzxwfx-luan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wzxwfx-luan.png"; sourceTree = "<group>"; };
+		03E280342294D7B80037E2BA /* wzxwfx-mi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wzxwfx-mi.png"; sourceTree = "<group>"; };
+		03E280352294D7B80037E2BA /* wzxwfx-lz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wzxwfx-lz.png"; sourceTree = "<group>"; };
+		03E280362294D7B80037E2BA /* wzxwfx-banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wzxwfx-banner.png"; sourceTree = "<group>"; };
+		03E280372294D7B80037E2BA /* weizhangdidian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weizhangdidian.png; sourceTree = "<group>"; };
+		03E280382294D7B80037E2BA /* qiehuan-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qiehuan-icon.png"; sourceTree = "<group>"; };
+		03E280392294D7B80037E2BA /* zhuanquanquna.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = zhuanquanquna.gif; sourceTree = "<group>"; };
+		03E2803A2294D7B80037E2BA /* wzxwfx-sid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wzxwfx-sid.png"; sourceTree = "<group>"; };
+		03E2803B2294D7B80037E2BA /* wzxwfx-jieguo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wzxwfx-jieguo.png"; sourceTree = "<group>"; };
+		03E2803C2294D7B80037E2BA /* wzxwfx-wen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wzxwfx-wen.png"; sourceTree = "<group>"; };
+		03E2803D2294D7B80037E2BA /* dibupic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dibupic.png; sourceTree = "<group>"; };
+		03E2803E2294D7B80037E2BA /* linghongbaobanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linghongbaobanner.png; sourceTree = "<group>"; };
+		03E2803F2294D7B80037E2BA /* wzxwfx-can.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wzxwfx-can.png"; sourceTree = "<group>"; };
+		03E280402294D7B80037E2BA /* wzxwfx-shuai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wzxwfx-shuai.png"; sourceTree = "<group>"; };
+		03E280412294D7B80037E2BA /* wzxwfx-sid2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wzxwfx-sid2.png"; sourceTree = "<group>"; };
+		03E280422294D7B80037E2BA /* wzxwfx-che.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wzxwfx-che.png"; sourceTree = "<group>"; };
+		03E280432294D7B80037E2BA /* wzxwfx-lu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wzxwfx-lu.png"; sourceTree = "<group>"; };
+		03E280452294D7B80037E2BA /* aui.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = aui.css; sourceTree = "<group>"; };
+		03E280462294D7B80037E2BA /* wzfxstyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = wzfxstyle.css; sourceTree = "<group>"; };
+		03E280482294D7B80037E2BA /* mobiscroll.custom-2.17.0.min-zh.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mobiscroll.custom-2.17.0.min-zh.js"; sourceTree = "<group>"; };
+		03E280492294D7B80037E2BA /* jquery.circliful.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.circliful.js; sourceTree = "<group>"; };
+		03E2804A2294D7B80037E2BA /* jQuery-v3.1.1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jQuery-v3.1.1.js"; sourceTree = "<group>"; };
+		03E2804B2294D7B80037E2BA /* echarts.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = echarts.min.js; sourceTree = "<group>"; };
+		03E2804D2294D7B80037E2BA /* jaizaizhong.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jaizaizhong.html; sourceTree = "<group>"; };
+		03E2804E2294D7B80037E2BA /* weizhangfenxi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = weizhangfenxi.html; sourceTree = "<group>"; };
+		03E2804F2294D7B80037E2BA /* qiehuancheliang.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = qiehuancheliang.html; sourceTree = "<group>"; };
+		03E2809F2294F9A40037E2BA /* UIScrollView+Snapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Snapshot.h"; sourceTree = "<group>"; };
+		03E280A02294F9A40037E2BA /* UIScrollView+Snapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Snapshot.m"; sourceTree = "<group>"; };
+		03E280A22294FCFB0037E2BA /* UIView+Snapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Snapshot.h"; sourceTree = "<group>"; };
+		03E280A32294FCFB0037E2BA /* UIView+Snapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Snapshot.m"; sourceTree = "<group>"; };
+		03E280A522951DCD0037E2BA /* UIWindow+Snapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Snapshot.h"; sourceTree = "<group>"; };
+		03E280A622951DCD0037E2BA /* UIWindow+Snapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Snapshot.m"; sourceTree = "<group>"; };
+		03E280A8229522830037E2BA /* UIWebView+Snapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebView+Snapshot.h"; sourceTree = "<group>"; };
+		03E280A9229522830037E2BA /* UIWebView+Snapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+Snapshot.m"; sourceTree = "<group>"; };
+		03E280AB22952D8C0037E2BA /* UITableView+Snapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Snapshot.h"; sourceTree = "<group>"; };
+		03E280AC22952D8C0037E2BA /* UITableView+Snapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Snapshot.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +154,7 @@
 		0361484F2293C65D0093D9F1 /* ZSSnapshotKit_master */ = {
 			isa = PBXGroup;
 			children = (
+				03E280312294D7AA0037E2BA /* Source */,
 				036148732293E81D0093D9F1 /* SVProgressHUD */,
 				036148502293C65D0093D9F1 /* AppDelegate.h */,
 				036148512293C65D0093D9F1 /* AppDelegate.m */,
@@ -110,6 +178,16 @@
 				0361486D2293CE060093D9F1 /* WebViewPrintPageRenderer.m */,
 				036148682293C8370093D9F1 /* WKWebView+Snapshot.h */,
 				036148692293C8370093D9F1 /* WKWebView+Snapshot.m */,
+				03E280A8229522830037E2BA /* UIWebView+Snapshot.h */,
+				03E280A9229522830037E2BA /* UIWebView+Snapshot.m */,
+				03E2809F2294F9A40037E2BA /* UIScrollView+Snapshot.h */,
+				03E280A02294F9A40037E2BA /* UIScrollView+Snapshot.m */,
+				03E280AB22952D8C0037E2BA /* UITableView+Snapshot.h */,
+				03E280AC22952D8C0037E2BA /* UITableView+Snapshot.m */,
+				03E280A22294FCFB0037E2BA /* UIView+Snapshot.h */,
+				03E280A32294FCFB0037E2BA /* UIView+Snapshot.m */,
+				03E280A522951DCD0037E2BA /* UIWindow+Snapshot.h */,
+				03E280A622951DCD0037E2BA /* UIWindow+Snapshot.m */,
 			);
 			name = ZSSnapshotKit;
 			path = ../ZSSnapshotKit;
@@ -148,6 +226,71 @@
 				036148762293E81D0093D9F1 /* SVRadialGradientLayer.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		03E280312294D7AA0037E2BA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				03E280442294D7B80037E2BA /* css */,
+				03E2804C2294D7B80037E2BA /* html */,
+				03E280322294D7B80037E2BA /* img */,
+				03E280472294D7B80037E2BA /* js */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		03E280322294D7B80037E2BA /* img */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		03E280442294D7B80037E2BA /* css */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		03E280472294D7B80037E2BA /* js */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		03E2804C2294D7B80037E2BA /* html */ = {
+			isa = PBXGroup;
+			children = (
+				03E280452294D7B80037E2BA /* aui.css */,
+				03E280462294D7B80037E2BA /* wzfxstyle.css */,
+				03E280332294D7B80037E2BA /* wzxwfx-luan.png */,
+				03E280342294D7B80037E2BA /* wzxwfx-mi.png */,
+				03E280352294D7B80037E2BA /* wzxwfx-lz.png */,
+				03E280362294D7B80037E2BA /* wzxwfx-banner.png */,
+				03E280372294D7B80037E2BA /* weizhangdidian.png */,
+				03E280382294D7B80037E2BA /* qiehuan-icon.png */,
+				03E280392294D7B80037E2BA /* zhuanquanquna.gif */,
+				03E2803A2294D7B80037E2BA /* wzxwfx-sid.png */,
+				03E2803B2294D7B80037E2BA /* wzxwfx-jieguo.png */,
+				03E2803C2294D7B80037E2BA /* wzxwfx-wen.png */,
+				03E2803D2294D7B80037E2BA /* dibupic.png */,
+				03E2803E2294D7B80037E2BA /* linghongbaobanner.png */,
+				03E2803F2294D7B80037E2BA /* wzxwfx-can.png */,
+				03E280402294D7B80037E2BA /* wzxwfx-shuai.png */,
+				03E280412294D7B80037E2BA /* wzxwfx-sid2.png */,
+				03E280422294D7B80037E2BA /* wzxwfx-che.png */,
+				03E280432294D7B80037E2BA /* wzxwfx-lu.png */,
+				03E280482294D7B80037E2BA /* mobiscroll.custom-2.17.0.min-zh.js */,
+				03E280492294D7B80037E2BA /* jquery.circliful.js */,
+				03E2804A2294D7B80037E2BA /* jQuery-v3.1.1.js */,
+				03E2804B2294D7B80037E2BA /* echarts.min.js */,
+				03E2804D2294D7B80037E2BA /* jaizaizhong.html */,
+				03E2804E2294D7B80037E2BA /* weizhangfenxi.html */,
+				03E2804F2294D7B80037E2BA /* qiehuancheliang.html */,
+			);
+			path = html;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,12 +350,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E280572294D7B80037E2BA /* wzxwfx-sid.png in Resources */,
+				03E280522294D7B80037E2BA /* wzxwfx-lz.png in Resources */,
 				036148862293E81D0093D9F1 /* README.md in Resources */,
+				03E280512294D7B80037E2BA /* wzxwfx-mi.png in Resources */,
 				036148852293E81D0093D9F1 /* SVProgressHUD.bundle in Resources */,
+				03E280562294D7B80037E2BA /* zhuanquanquna.gif in Resources */,
+				03E280592294D7B80037E2BA /* wzxwfx-wen.png in Resources */,
+				03E2805E2294D7B80037E2BA /* wzxwfx-sid2.png in Resources */,
+				03E280622294D7B80037E2BA /* wzfxstyle.css in Resources */,
+				03E280672294D7B80037E2BA /* jaizaizhong.html in Resources */,
+				03E2805C2294D7B80037E2BA /* wzxwfx-can.png in Resources */,
+				03E280542294D7B80037E2BA /* weizhangdidian.png in Resources */,
+				03E280682294D7B80037E2BA /* weizhangfenxi.html in Resources */,
+				03E2805F2294D7B80037E2BA /* wzxwfx-che.png in Resources */,
 				0361485D2293C65F0093D9F1 /* LaunchScreen.storyboard in Resources */,
+				03E280502294D7B80037E2BA /* wzxwfx-luan.png in Resources */,
+				03E280662294D7B80037E2BA /* echarts.min.js in Resources */,
+				03E280642294D7B80037E2BA /* jquery.circliful.js in Resources */,
+				03E280652294D7B80037E2BA /* jQuery-v3.1.1.js in Resources */,
 				0361485A2293C65F0093D9F1 /* Assets.xcassets in Resources */,
+				03E280552294D7B80037E2BA /* qiehuan-icon.png in Resources */,
+				03E2805B2294D7B80037E2BA /* linghongbaobanner.png in Resources */,
+				03E280582294D7B80037E2BA /* wzxwfx-jieguo.png in Resources */,
+				03E280602294D7B80037E2BA /* wzxwfx-lu.png in Resources */,
 				036148802293E81D0093D9F1 /* LICENSE in Resources */,
+				03E2805D2294D7B80037E2BA /* wzxwfx-shuai.png in Resources */,
 				036148582293C65D0093D9F1 /* Main.storyboard in Resources */,
+				03E280632294D7B80037E2BA /* mobiscroll.custom-2.17.0.min-zh.js in Resources */,
+				03E280612294D7B80037E2BA /* aui.css in Resources */,
+				03E280692294D7B80037E2BA /* qiehuancheliang.html in Resources */,
+				03E280532294D7B80037E2BA /* wzxwfx-banner.png in Resources */,
+				03E2805A2294D7B80037E2BA /* dibupic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,15 +392,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03E280A42294FCFB0037E2BA /* UIView+Snapshot.m in Sources */,
+				03E280AA229522830037E2BA /* UIWebView+Snapshot.m in Sources */,
 				036148812293E81D0093D9F1 /* SVRadialGradientLayer.m in Sources */,
+				03E280AD22952D8C0037E2BA /* UITableView+Snapshot.m in Sources */,
 				036148552293C65D0093D9F1 /* ViewController.m in Sources */,
 				0361486A2293C8370093D9F1 /* WKWebView+Snapshot.m in Sources */,
 				036148602293C65F0093D9F1 /* main.m in Sources */,
+				03E280A722951DCD0037E2BA /* UIWindow+Snapshot.m in Sources */,
 				0361486E2293CE060093D9F1 /* WebViewPrintPageRenderer.m in Sources */,
 				036148842293E81D0093D9F1 /* SVIndefiniteAnimatedView.m in Sources */,
 				036148832293E81D0093D9F1 /* SVProgressHUD.m in Sources */,
 				036148522293C65D0093D9F1 /* AppDelegate.m in Sources */,
 				036148722293E0B70093D9F1 /* WKWebViewTesterViewController.m in Sources */,
+				03E280A12294F9A40037E2BA /* UIScrollView+Snapshot.m in Sources */,
 				036148822293E81D0093D9F1 /* SVProgressAnimatedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
